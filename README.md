@@ -13,12 +13,8 @@ cd ts_test
 ```
 conda create -n ts_env python=3.7.3
 conda activate ts_env
-python -m pip install fbprophet
-python -m pip install --upgrade mxnet==1.6 gluonts
-python -m pip install torch torchvision
-python -m pip install pytorchts
-python -m pip install plotly dash
-python -m pip freeze > requirements.txt
+#python -m pip install statsmodels
+#python -m pip freeze > requirements.txt
 ```
 
 ### Para instalar de nuevo el entorno con el requirements
@@ -27,7 +23,9 @@ python -m pip freeze > requirements.txt
 
 ### Publicar kernel en pupyterhub:
 
-```python -m pip install --upgrade ipykernel```
+```
+python -m ipykernel install --user --name ts_env --display-name "ts_env"
+```
 
 ## modificar git ignore y publicar cambios
 
@@ -37,3 +35,11 @@ git add .
 git commit -m "Inicializamos entorno"
 git push origin master
 ```
+
+# references
+Thanks to IJN-Kasumi 1939–1945 in [Medium](https://medium.com/@sakamoto2000.kim/forecast-arima-gluonts-and-fbprophet-methods-on-the-same-stage-f62d55acc5bb)
+and also to Kshif in [github post](https://github.com/zalandoresearch/pytorch-ts).
+
+
+# open in colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/griu/ts_test/blob/master/01_TS_Benchmark.ipynb)
