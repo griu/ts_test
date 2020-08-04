@@ -18,6 +18,7 @@ python -m pip install --upgrade mxnet==1.6 gluonts
 python -m pip install torch torchvision
 python -m pip install pytorchts
 python -m pip install plotly dash
+python -m pip freeze > requirements.txt
 ```
 
 ### Para instalar de nuevo el entorno con el requirements
