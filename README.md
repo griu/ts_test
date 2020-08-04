@@ -34,4 +34,6 @@ python -m pip freeze > requirements.txt
 ```
 git pull
 git add .
+git commit -m "Inicializamos entorno"
+git push origin master
 ```
