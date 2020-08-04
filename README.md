@@ -44,7 +44,9 @@ and also to Kshif in [github post](https://github.com/zalandoresearch/pytorch-ts
 # open in colab
 
 - With gluonts (CPU): [01_TS_Benchmark.ipynb](http://colab.research.google.com/github/griu/ts_test/blob/master/01_TS_Benchmark.ipynb)
+  - 1:30 seconds per epoch
 - With pytorchts (GPU): [02_TS_Benchmark_pytorch.ipynb](http://colab.research.google.com/github/griu/ts_test/blob/master/02_TS_Benchmark_pytorch.ipynb)
   - edit -> notebook setting -> Python 3 GPU
+  - 18 seconds per epoch (5 times faster with GPU)
 
 
